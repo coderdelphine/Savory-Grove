@@ -41,7 +41,6 @@ li, a {
 nav {
     display: flex;
     align-items: center;
-    /* grid-area: nav; */
 }
 
 /* Style for the list of navigation links */
@@ -71,7 +70,6 @@ nav {
     justify-content: space-between;
     align-items: center;
     margin-left: 100px;
-    /* grid-area: hero; */
 }
 
 .hero .text {
@@ -122,20 +120,6 @@ nav {
     background: palevioletred;
     color: white;
 }
-
-/* @media only screen and (max-width: 550px) {
-    .container {
-        grid-template-columns: 1fr;
-        grid-template-rows: 0.4fr 0.4fr 2.2fr 1.2fr 1.2fr 1.2fr 1fr;
-        grid-template-areas: 
-        "nav"
-        "hero"
-        "content"
-        "section"
-        "about"
-        "footer";
-    }
-} */
 
 .content {
     background-color: #643843;
@@ -337,3 +321,175 @@ section .trend {
     text-shadow: none;
 }
 
+/* Contact Form */
+
+.containform {
+    color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #382933;
+}
+
+.form {
+    width: 670px;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    box-shadow: 20px 20px 50px palevioletred;
+    border-radius: 15px;
+    background: #331D2C;
+    backdrop-filter: blur(10px);
+    flex-wrap: wrap;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+
+.containform .form .frmh1 {
+    color: white;
+    margin-top: 20px;
+    width: 500px;
+    text-align: center;
+}
+
+.containform .form input {
+    width: 290px;
+    height: 40px;
+    padding-left: 10px;
+    outline: none;
+    border: none;
+    font-size: 15px;
+    margin-bottom: 10px;
+    background: none;
+    border-bottom: 2px solid white;
+    color: white;
+}
+
+.containform .form input::placeholder {
+    color: #ddd;
+}
+
+.containform .form #lastName, .containform .form #mobile {
+    margin-left: 20px;
+}
+
+.containform .form h4 {
+    color: white;
+    font-weight: 300;
+    width: 600px;
+    margin-top: 20px;
+}
+
+.containform .form textarea {
+    background: none;
+    border: none;
+    border-bottom: 2px solid white;
+    color: white;
+    font-weight: 200;
+    font-size: 15px;
+    padding: 10px;
+    outline: none;
+    min-width: 600px;
+    max-width: 600px;
+    min-height: 80px;
+    max-height: 80px;
+}
+
+textarea::-webkit-scrollbar {
+    width: 1em;
+}
+
+textarea::-webkit-scrollbar-thumb {
+    background-color: rgba(194, 194, 194, 0.713);
+}
+
+.containform .form #button {
+    margin-top: 2%;
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1em;
+    border-radius: 10px;
+    text-decoration: none;
+    color: palevioletred;
+    font-weight: 600;
+    transition: 0.25s;
+    background: white;
+    text-align: center;
+    border: none;
+}
+
+.containform .form #button:hover {
+    letter-spacing: 2px;
+    background: palevioletred;
+    color: white;
+    text-shadow: none;
+}
+
+/* Form End */
+
+/* footer section */
+
+footer {
+    background-color: #1A1A2E;
+}
+
+.footercontainer {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: white;
+}
+
+.footicons {
+    display: flex;
+    justify-content: center;
+    margin-left: 2%;
+}
+
+.footicons a {
+    text-decoration: none;
+    padding: 2px;
+    margin: 4px;
+    padding-bottom: 10px;
+}
+
+.footicons a i {
+    font-size: 1.6em;
+    color: black;
+    opacity: 0.9;
+    color: white;
+    text-shadow: 0px 3px 3px palevioletred;
+}
+
+/* Hover */
+.footicons a i:hover{
+    text-shadow: 0px 3px 3px rgb(149, 120, 228);
+    transition: 0.25s;
+}
+
+.footnav li {
+    display: inline-block;
+    padding: 0px 20px;
+}
+
+.footnav li a {
+    transition: all 0.3s ease 0s;
+    text-decoration: none;
+    text-shadow: 0px 4px 4px palevioletred;
+}
+
+/* Add a hover effect to the navigation links */
+.footnav li a:hover{
+    transition: all 0,4s ease 0s;
+    text-shadow: 4px 4px 10px rgb(149, 120, 228);
+    letter-spacing: 2px;
+}
+
+.footbottom {
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    text-shadow: 0px 0px 8px palevioletred;
+    color: white;
+    margin-right: 2%;
+}
